@@ -1,5 +1,5 @@
-# goit-markup-hw-05
+# goit-markup-hw-06
 
-homework 5
+homework 6
 
-https://pyrosome.github.io/goit-markup-hw-05/
+https://pyrosome.github.io/goit-markup-hw-06/
