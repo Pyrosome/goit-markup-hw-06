@@ -405,22 +405,41 @@
                         <h2 class="modal-text">Залиште свої дані, ми вам передзвонимо</h1>
                         <form action="" class="modal-form">
                             <label class="modal-label">Ім'я
+                                <span class="modal-span">
+                                    <svg lang="en" class="modal-icon">
+                                        <use href="./images/sprite.svg#icon-name"></use>
+                                    </svg>
+                                </span>
                                <input type="text" class="modal-input"> 
                             </label>
                             <label class="modal-label">Телефон
+                                <span class="modal-span">
+                                    <svg lang="en" class="modal-icon">
+                                        <use href="./images/sprite.svg#icon-phone"></use>
+                                    </svg>
+                                </span>
                                 <input type="text" class="modal-input">
                             </label>
                             <label class="modal-label">Пошта
+                                <span class="modal-span">
+                                    <svg lang="en" class="modal-icon">
+                                        <use href="./images/sprite.svg#icon-email"></use>
+                                    </svg>
+                                </span>
                                 <input type="text" class="modal-input">
                             </label>
                             <label class="modal-label">Коментар
-                                <textarea name="feedback" class="modal-input">
+                                <textarea type="text" name="" id="" rows="6" class="modal-input" placeholder="Введіть текст"></textarea>
                             </label>
-                            <label class="modal-label">
-                                <input type="checkbox" class="modal-input">
-                                Погоджуюся з розсилкою та приймаю <a class="link user-agreement-link" 
-                                href="">Умови договору</a>
+                            <label class="modal-checkbox-label">
+                                <input type="checkbox" class="modal-checkbox-input">
+                                <p class="modal-checkbox-text">
+                                    Погоджуюся з розсилкою та приймаю <a class="link user-agreement-link" href="">Умови договору</a>
+                                </p>
                             </label>
+                            <button class="modal-button" type="submit">
+                                Відправити
+                            </button>
                         </form>
                     </div>
                 </div>
