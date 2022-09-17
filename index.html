@@ -381,13 +381,14 @@
                 </ul>
             </div>
             <div>
-                <h3 class="subscription-text">Підпишіться на розсилку</h3>
+                <p class="subscription-text">Підпишіться на розсилку</p>
                 <form class="subscription-form">
                     <input class="subscription-input" type="email" name="subscription email" placeholder="E-mail" />
                     <button class="subscription-button" type="submit">
-                        <p>Підписатися</p>
+                        <span>Підписатися</span>
                         <svg lang="en" aria-label="subscription icon" class="subscription-icon">
                             <use href="./images/sprite.svg#icon-subscription"></use>
+                        </svg>
                     </button>
                 </form>
             </div>
@@ -402,40 +403,43 @@
                         </svg>
                     </button>
                     <div class="modal-text-container">
-                        <h2 class="modal-text">Залиште свої дані, ми вам передзвонимо</h1>
-                        <form action="" class="modal-form">
+                        <p class="modal-text">Залиште свої дані, ми вам передзвонимо</p>
+                        <form action="userform" class="modal-form">
                             <label class="modal-label">Ім'я
+                               <input type="text" class="modal-input"> 
                                 <span class="modal-span">
-                                    <svg lang="en" class="modal-icon">
+                                    <svg lang="en" class="modal-icon modal-icon-name">
                                         <use href="./images/sprite.svg#icon-name"></use>
                                     </svg>
                                 </span>
-                               <input type="text" class="modal-input"> 
                             </label>
                             <label class="modal-label">Телефон
+                                <input type="text" class="modal-input">
                                 <span class="modal-span">
-                                    <svg lang="en" class="modal-icon">
+                                    <svg lang="en" class="modal-icon modal-icon-phone">
                                         <use href="./images/sprite.svg#icon-phone"></use>
                                     </svg>
                                 </span>
-                                <input type="text" class="modal-input">
                             </label>
                             <label class="modal-label">Пошта
+                                <input type="text" class="modal-input">
                                 <span class="modal-span">
-                                    <svg lang="en" class="modal-icon">
+                                    <svg lang="en" class="modal-icon modal-icon-email">
                                         <use href="./images/sprite.svg#icon-email"></use>
                                     </svg>
                                 </span>
-                                <input type="text" class="modal-input">
                             </label>
-                            <label class="modal-label">Коментар
-                                <textarea type="text" name="" id="" rows="6" class="modal-input" placeholder="Введіть текст"></textarea>
+                            <label class="modal-label label-comment">Коментар
+                                <textarea name="commentary" rows="10" class="modal-textarea" placeholder="Введіть текст"></textarea>
                             </label>
                             <label class="modal-checkbox-label">
                                 <input type="checkbox" class="modal-checkbox-input">
-                                <p class="modal-checkbox-text">
+                                <svg class="modal-icon icon-checkbox">
+                                    <use href="./images/sprite.svg#icon-checkbox"></use>
+                                </svg>
+                                <span class="modal-checkbox-text">
                                     Погоджуюся з розсилкою та приймаю <a class="link user-agreement-link" href="">Умови договору</a>
-                                </p>
+                                </span>
                             </label>
                             <button class="modal-button" type="submit">
                                 Відправити
