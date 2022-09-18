@@ -969,7 +969,7 @@ textarea {
 .modal-span {
     position: absolute;
     z-index: 1;
-    transform: translate(2px, 19px);
+    transform: translate(2px, 18px);
     
     width: 18px;
     height: 18px;
