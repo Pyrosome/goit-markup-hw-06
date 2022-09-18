@@ -651,6 +651,12 @@ address {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.3);
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscription-input:focus {
+    border-color: var(--accent-color);
 }
 
 .subscription-button {
@@ -674,6 +680,10 @@ address {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border-color: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+
+.subscription-button:hover {
+    background-color: #188CE8;
 }
 
 .subscription-icon {
@@ -970,8 +980,8 @@ textarea {
     align-items: center;
 }
 
-input:focus,
-textarea:focus {
+.modal input:focus,
+.modal textarea:focus {
     border-color: var(--accent-color);
 }
 
