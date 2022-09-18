@@ -43,8 +43,10 @@ button,
     cursor: pointer;
 }
 
-input {
+input,
+textarea {
     box-sizing: border-box;
+    outline: none;
 }
 
 .container {
@@ -497,6 +499,11 @@ address {
     font-style: normal;
 }
 
+.footer-flex {
+    display: flex;
+    align-items: baseline;
+}
+
 .address-mail-tel,
 .address-street {
     display: inline-block;
@@ -549,10 +556,9 @@ address {
 
 /* ====== join us ======*/
 
-.footer-flex {
-    display: flex;
-    column-gap: 70px;
-    align-items: baseline;
+.join-us-box {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .join-us-text {
@@ -602,6 +608,10 @@ address {
 
 /* ======= subscription button ======= */
 
+.subscription-box {
+    margin-left: auto;
+} 
+
 .subscription-text {
     font-family: var(--primary-font);
     font-style: normal;
@@ -617,8 +627,7 @@ address {
 
 .subscription-form {
     display: flex;
-    column-gap: 12px;    
-    
+    column-gap: 12px;  
 }
 
 .subscription-input {
@@ -802,7 +811,7 @@ address {
     transform: translateY(0);
 }
 
-/* ========= бекдроп ========= */
+/* ========= modal and backdrop ========= */
 
 .is-hidden {
     pointer-events: none;
@@ -846,8 +855,8 @@ address {
 
 .icon-close-bnt {
     position: absolute; 
-    top: 17px;
-    right: 17px;
+    top: 8px;
+    right: 8px;
     
 
     width: 30px;
@@ -855,6 +864,10 @@ address {
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: transparent;
+}
+
+.icon-close-bnt:hover .icon-close {
+    fill: var(--accent-color);
 }
 
 /* ========= modal inputs form ========= */
@@ -981,12 +994,21 @@ textarea {
     justify-content: center;
 }
 
+.modal-checkbox-input {
+    display: none;
+}
+
 .icon-checkbox {
     width: 16px;
     height: 15px;
     fill: none;
+    border: 1px solid #757575;
     border-radius: 2px;
-    border-color: #757575;
+}
+
+.modal-checkbox-input:checked + .icon-checkbox {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 .modal-button {
@@ -1009,8 +1031,8 @@ textarea {
     border-color: transparent;
 }
 
-.modal-input:focus,
-.modal-textarea:focus {
+input:focus,
+textarea:focus {
     border-color: var(--accent-color);
 }
 
